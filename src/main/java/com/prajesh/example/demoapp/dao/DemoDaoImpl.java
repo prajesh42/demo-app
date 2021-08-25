@@ -25,6 +25,10 @@ public class DemoDaoImpl {
 		return demoDao.findByCategoryId(categoryId);
 	}
 	
+	public List<ProductInfo> getAllProducts(){
+		return (List<ProductInfo>) demoDao.findAll();
+	}
+	
 	public ProductInfo getProduct(String productId) {
 		return demoDao.findByProductId(productId);
 	}

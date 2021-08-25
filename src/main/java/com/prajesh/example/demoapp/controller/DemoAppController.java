@@ -63,10 +63,17 @@ public class DemoAppController {
 		return ResponseEntity.status(HttpStatus.OK).body(categoryProductList);
 	}
 	
+	@GetMapping("/product/list")
+	public ResponseEntity<?> getAllProductList(){
+		List<ProductInfo> categoryProductList = demoService.getAllProduct();
+		return ResponseEntity.status(HttpStatus.OK).body(categoryProductList);
+	}
+	
 	@DeleteMapping("/product/{productId}")
 	public ResponseEntity<?> deleteProduct(@PathVariable("productId") String productId){
 		ProductInfo productInfo = demoService.deleteProduct(productId);
 		return ResponseEntity.status(HttpStatus.NO_CONTENT).body(productInfo);
 	}
+	
 	
 }

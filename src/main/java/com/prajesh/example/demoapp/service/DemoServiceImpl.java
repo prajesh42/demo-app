@@ -40,4 +40,9 @@ public class DemoServiceImpl implements DemoService {
 		return demoDaoImpl.deleteProduct(productId);
 	}
 
+	@Override
+	public List<ProductInfo> getAllProduct() {
+		return demoDaoImpl.getAllProducts();
+	}
+
 }

@@ -15,4 +15,6 @@ public interface DemoService {
 	public ProductInfo getProduct(String productId);
 	
 	public ProductInfo deleteProduct(String productId);
+	
+	public List<ProductInfo> getAllProduct(); 
 }
