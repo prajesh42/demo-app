@@ -1,7 +1,9 @@
 #excludes
-
+target/
+bin/
 *.class
-*/target
 *.jar
 .settings
 .project
+.classpath
+ 
