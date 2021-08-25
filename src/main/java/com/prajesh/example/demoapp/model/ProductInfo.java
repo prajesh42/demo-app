@@ -36,6 +36,6 @@ public class ProductInfo {
 	@NotNull
 	private String brand;
 	@NotNull
-	@Schema(name = "dd-mm-yyy")
+	@Schema(example = "dd-mm-yyy")
 	private Date date;
 }
